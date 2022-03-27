@@ -1,0 +1,70 @@
+.qs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qs .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box-qs{
+    width: 60%;
+    margin-top: 10vh;
+}
+.qs-heading {
+    padding: 2rem;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 600;
+}
+.qs-text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5vw;
+    line-height: 1.2em;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10vh;
+}
+.btn{
+    background: linear-gradient(92.51deg, #1D7BEF 0.59%, #2EBBF0 102.35%);
+    display: inline;
+    font-weight: 500;
+    font-size: 1.5vw;
+    border-radius: 54px;
+    padding: 0.6em 1.3em;
+    width: fit-content;
+}
+@media(max-width: 960px){
+    .text-box-qs{
+        width: 80%;
+        margin-top: 0;
+    }
+    .qs-heading{
+        font-size: 7.5vw;
+    }
+    .qs-text, .btn{
+        font-size: 4.5vw;
+    }
+}
+
+@media(min-width: 620px) and (max-width: 960px){
+    .qs-heading{
+        font-size: 0.7em;
+    }
+    .qs-text, .btn{
+        font-size: 0.4em;
+    }
+}
+
+@media(min-width: 960px){
+    .learnMoreQS {
+        padding: 1.1em 1.8em;
+    }
+}

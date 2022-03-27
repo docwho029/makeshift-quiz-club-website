@@ -1,0 +1,66 @@
+/* ----------------------------------------------------------- */
+                            /* decorations */
+/* ----------------------------------------------------------- */
+.strip-left, .strip-right {
+    height: 80%;
+    width: 45px;
+    position: absolute;
+    /* border: 1px solid black; */
+}
+
+.strip-left {
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0.12deg, #1D7BEF 2.63%, #2EBBF0 94.44%);
+    border-radius: 0px 61px 0px 0px;
+}
+
+.strip-right {
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(180deg, #2EBBF0 0%, #1D7BEF 65.33%, #29A7F0 97.99%);
+    border-radius: 61px 0px 0px 0px;
+}
+
+/* ----------------------------------------------------------- */
+                            /* content */
+/* ----------------------------------------------------------- */
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.title-content-box {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.logo-svg {
+    height: 75%;
+    /* width: 375px; */
+    /* border: 3px solid #F2709C; */
+    /* width: 26%; */
+    /* height: 35vw; */
+    /* background-color: #fff; */
+}
+
+
+.main-title {
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+    padding: 2vw;
+    text-align: center;
+}
+
+@media(max-width: 720px) {
+    .strip-left, .strip-right{
+        width: 25px;
+    }
+}

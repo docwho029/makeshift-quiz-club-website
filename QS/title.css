@@ -1,0 +1,137 @@
+/* ----------------------------------------------------------- */
+                            /* decorations */
+/* ----------------------------------------------------------- */
+
+.strip-left, .strip-right {
+    height: 80%;
+    width: 45px;
+    position: absolute;
+    /* border: 1px solid black; */
+}
+
+.strip-left {
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0.12deg, #1D7BEF 2.63%, #2EBBF0 94.44%);
+    border-radius: 0px 61px 0px 0px;
+    border-radius: 0px 61px 0px 0px;
+}
+
+.strip-right {
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(180deg, #2EBBF0 0%, #1D7BEF 65.33%, #29A7F0 97.99%);
+    border-radius: 61px 0px 0px 0px;
+    border-radius: 61px 0px 0px 0px;
+}
+
+.circle{
+    position: absolute;
+    height: 50vh;
+    width: 50vh;
+    border-radius: 100%;
+    background-color: #fff;
+    z-index: 0;
+}
+.title-strip{
+    z-index: 1;
+}
+.circle-top{
+    top: -10vh;
+    left: 90vw;
+}
+.circle-bottom{
+    bottom: -9vh;
+    right: 78vw;
+}
+/* ----------------------------------------------------------- */
+                            /* content */
+/* ----------------------------------------------------------- */
+.title{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.title-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-top: 3rem;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5vw 0;
+}
+
+.small-title{
+    font-size: 1.1vw;
+    letter-spacing: 0.1rem;
+    align-self: flex-start;
+    margin-bottom: -0.5vw;
+}
+.big-title{
+    font-size: 5.5vw;
+}
+.para-text{
+    font-size:2vw;
+    text-align: center;
+}
+.para2{
+    margin-top: 1.8vw;
+}
+.button{
+    margin-top: 5vw;
+    background: linear-gradient(92.51deg, #1D7BEF 0.59%, #2EBBF0 102.35%);
+    border-radius: 54px;
+    border-radius: 54px;
+    padding: 0.6em 2rem;
+    font-size: 1.2rem;
+}
+
+@media(max-width: 960px){
+    .small-title{
+        font-size: 2.7vw;
+    }
+    .big-title{
+        font-size: 7.1vw;
+    }
+    .para-text{
+        font-size: 3.7vw;
+    }
+    .circle-top{
+        top: -20vh;
+        left: 80vw;
+    }
+    .circle-bottom{
+        right: 55vw;
+        bottom: -25vh;
+    }
+    .strip-left, .strip-right{
+        width: 25px;
+    }
+    .box{
+        margin-top: 0;
+    }
+}
+@media(max-width: 360px){
+    .circle-top{
+        top: -30vh;
+        left: 85vw;
+    }
+}
+
+@media(min-width: 620px) and (max-width: 960px){
+    
+    .block2 > * {
+        font-size: 2.7vw;
+    }
+}
